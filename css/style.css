@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Story+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #ff7a00;
+    --color-secondary: #1e3a5f;
+    --color-accent: #4da3ff;
+
+    --color-bg: #f5f7fa;
+    --color-card: #ffffff;
+
+    --color-text: #215E61;
+    --color-text-muted: #F5FBE6;
+}
+
+
+body {
+    color: var(--color-text);
+    font-size: 1em;
+    background-color: var(--color-bg);
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    height: 75px;
+    width: 100%;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+header>a {
+    text-decoration: none;
+    font-family: "Story Script", sans-serif;
+    color: var(--color-text-muted);
+}
+
+span {
+    font-family: "Imperial Script", cursive;
+    font-size: 30px;
+    color: lightcoral;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 0 50px;
+
+}
+
+nav>a {
+    text-decoration: none;
+    color: var(--color-text-muted);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+nav>a:hover {
+    color: var(--color-accent);
+    transform: scale(1.1);
+}
+
+#seccion_hero {
+    width: 100%;
+    height: 80vh;
+    background-image: url(../img/hero1.jfif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    font-weight: bold;
+}
+
+#destino_hero {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: var(--color-text-muted);
+    position: relative;
+}
+#destino_hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#destino_hero>div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#seccion_hero>h1, #destino_hero h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Story Script", sans-serif;
+}
+
+#seccion_hero>a {
+    text-decoration: none;
+    color: var(--color-text-muted);
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "Playfair", serif;
+}
+
+#seccion_hero>a:hover {
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    transform: scale(1.05);
+    opacity: 60%;
+}
+
+#seccion_hero>p, #destino_hero p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--color-text-muted);
+    font-family: "Lato", sans-serif;
+    width: 50vw;
+}
+
+#card_destino {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+}
+
+#card_destino h2, p {
+    padding: 0 20px;
+}
+
+#formulario>h2 {
+    font-size: 2rem;
+    background-color: var(--color-secondary);
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 80%;
+}
+
+#card_destino>a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+#card_destino>a:hover {
+    color: var(--color-primary);
+    transform: scale(1.05);
+}
+
+#card_destino>a>div {
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--color-card);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+#card_destino>a>div>img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+#card_destino>a>div>p {
+    font-weight: bold;
+}
+
+#playa_actividades {
+    padding:  20px 100px;
+}
+
+#playa_actividades>h2 {
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.actividades {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+
+.actividades>div {
+    width: 400px;
+    height: max-content;
+    object-fit: cover;
+    background-color: var(--color-card);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.actividades>div>img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.actividades h3, p {
+    padding: 10px 20px;
+}
+
+#act_monte {
+    display: none;
+}
+
+#act_urbano {
+    display: none;
+}
+
+#info_seccion {
+    padding: 20px 100px;
+}
+
+.info {
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--color-card);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info_mapa p {
+    padding: 50px 100px;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.info_mapa {
+    display: flex;
+    gap: 20px;
+}
+
+#galeria {
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+#galeria img {
+    width: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#formulario {
+    height: max-content;
+    background-color: var(--color-card);
+    color: var(--color-text-muted);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+    font-size: 1.2em;
+    background-image: url(../img/Coron-Palawan.jpg);
+    background-size: cover;
+    font-family: "Playfair", serif;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2em;
+}
+
+.form input, select {
+    background-color: var(--color-text-muted);
+    color: var(--color-secondary);
+    padding: 5px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.act_opcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#formulario h3 {
+    background-color: var(--color-secondary);
+    width: max-content;
+    height: max-content;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 80%;
+}
+
+.act_opcion > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    cursor: pointer;
+    background-color: var(--color-text-muted);
+    color: var(--color-secondary);
+    padding: 5px;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+input[type="checkbox"] + label:hover {
+    transform: scale(1.05);
+}
+
+input[type="checkbox"]:checked +label {
+    background-color: var(--color-accent);
+    color: var(--color-text-muted);
+}
+
+#contenido_extras {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 50px;
+}
+
+.extras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.extras>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#contenedor_modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-bg);
+    opacity:0.9;
+    display: none;
+}
+
+#ventana_modal {
+    background-color: var(--color-secondary);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 20px;
+    padding: 40px;
+    width: max-content;
+}
+
+table {
+    padding: 10px;
+    background-color: var(--color-bg);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+th:not(.tabla_calc) {
+    text-align: left;
+}
+
+td {
+    padding-right: 20px;
+}
+
+.tabla_calc {
+    padding: 0 0 20px;
+}
+
+#total_extras {
+    margin: 5px 0 0 5px;
+    border: 1px solid;
+}
+
+tfoot>tr {
+    border-top: 2px solid var(--color-accent);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    padding: 20px;
+}
+
+button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-text-muted);
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #e66c00;
+    transform: scale(1.1);
+}
+
+button:active {
+    background-color: #af7034;
+}
+
+#correo_usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#icon {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#icon>a {
+    padding: 10px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #005461;
+}
+
+#icon>a:hover {
+    background-color: #00373f;
+}
+
+
+
+@media (width <= 600px) {
+    header {
+        gap: 10px;
+        height: max-content;
+    }
+
+    .actividades h3 {
+        padding: 5px;
+        text-align: center;
+    }
+
+    span {
+        font-size: 1.2em;
+    }
+
+    nav {
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    nav>a {
+        font-size: 1.1em;
+    }
+
+    #seccion_hero {
+        height: 30vh;
+        gap: 50px;
+        background-attachment: unset;
+    }
+
+    #seccion_hero>h1, #destino_hero>h1 {
+        font-size: 2rem;
+    }
+
+    #seccion_hero p, #destino_hero p {
+        width: 100vw;
+        font-size: 1.2rem;
+        padding: 0 50px;
+    }
+
+    #seccion_hero>a {
+        font-size: 1.2rem;
+    }
+
+    #formulario {
+        padding: 20px;
+    }
+
+    #contenido_extras {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #destino_hero, #destino_hero>video {
+        height: 30vh;
+        gap: 20px;
+    }
+
+    #destino_hero>div {
+        align-items: center;
+    }
+
+    .actividades {
+        flex-wrap: wrap;
+    }
+
+    #info_seccion {
+        padding: 0;
+    }
+
+    .info_mapa {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .info_mapa p {
+        padding: 20px;
+    }
+
+    #trailer_vid {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    #trailer_vid video {
+        width: 300px;
+    }
+
+}
+
+
+@media (width <= 430px) {
+
+    header>a {
+        font-size: 0.7rem;
+    }
+
+    header {
+        padding: 5px;
+        align-items: center;
+    }
+
+    span {
+        font-size: 1rem;
+    }
+
+    nav {
+        gap: 5px;
+        padding: 0 10px;
+        justify-content: space-between;
+    }
+
+    nav>a {
+        font-size: 0.9em;
+    }
+
+    #seccion_hero, #destino_hero>div {
+        gap: 20px;
+    }
+
+    /* h1 {
+        font-size: 2em;
+    } */
+
+    #destino_hero>h1 {
+        font-size: 2.5rem;
+    }
+
+    #card_destino {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    #card_destino>a>div {
+        width: 100%;
+        height: max-content;
+    }
+
+    #playa_actividades {
+        padding: 20px;
+    }
+
+    #icon {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    table {
+        font-size: small;
+    }
+
+    #trailer_vid {
+        padding: 20px;
+    }
+
+}
