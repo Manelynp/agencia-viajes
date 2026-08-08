@@ -4,7 +4,14 @@
 👉 [View Live Demo](https://islaviajesyaventuras.netlify.app/)
 
 📸 Preview
-![Travel App Preview](./img/preview.png)
+<p align="center">
+  <img src="./img/homepage.PNG" width="45%" />
+  <img src="./img/booking-form.PNG" width="45%" />
+</p>
+
+<p align="center">
+  <img src="./img/price-calculation.PNG" width="45%" />
+</p>
 
 📂 Project Structure
 .
