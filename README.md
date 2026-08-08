@@ -1,13 +1,13 @@
-# 🌍 Travel Agency Website
+🌍 Travel Agency Website
 
-## 🌐 Live Demo
+🌐 Live Demo
 👉 https://islaviajesyaventuras.netlify.app/
 
 A travel agency web project developed using HTML, CSS, and JavaScript. This application allows users to select destinations, fill out an interactive form, and dynamically calculate travel prices.
 
 ---
 
-## 🚀 Features
+🚀 Features
 
 - 🌎 Destination selection
 - 🧾 Interactive booking form
@@ -17,7 +17,7 @@ A travel agency web project developed using HTML, CSS, and JavaScript. This appl
 
 ---
 
-## 🛠️ Technologies Used
+🛠️ Technologies Used
 
 - HTML5
 - CSS3
@@ -25,7 +25,7 @@ A travel agency web project developed using HTML, CSS, and JavaScript. This appl
 
 ---
 
-## 🌐 Language
+🌐 Language
 
 The user interface of this project is in Spanish 🇪🇸, but all documentation is provided in English for international accessibility.
 
