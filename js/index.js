@@ -1,35 +1,56 @@
 cambiarDestino();
 
+const destinos = {
+    playa: {
+        nombre: "Playa",
+        precio: 200
+    },
+    montana: {
+        nombre: "Montaña",
+        precio: 250
+    },
+    urbano: {
+        nombre: "Turismo urbano",
+        precio: 150
+    }
+};
+
+
 function cambiarDestino() {
     let destino = document.getElementById("destino").value;
     let playa = document.getElementById("act_playa");
     let monte = document.getElementById("act_monte");
     let turismo = document.getElementById("act_urbano");
     let precioBase = document.querySelector("#precio_base");
-
+    
     let destinoEligido = document.querySelector("#destino_eligido");
-
+    
     playa.style.display = "none";
     monte.style.display = "none";
     turismo.style.display = "none";
-
-
+    
+    
     switch (destino) {
         case "200":
-            playa.style.display = "flex";
-            destinoEligido.innerHTML = "Playa"
+                playa.style.display = "flex";
+                destinoEligido.textContent = "Playa"
             precioBase.innerHTML = destino + "€";
+            console.log(destinos.playa.nombre);
+            console.log(destinos.playa.precio);
             break;
-        case "250":
-            monte.style.display = "flex";
-            destinoEligido.innerHTML = "Montaña"
+            case "250":
+                monte.style.display = "flex";
+                destinoEligido.textContent = "Montaña"
             precioBase.innerHTML = destino + "€";
+            console.log(destinos.montana.nombre);
+            console.log(destinos.montana.precio);
             break;
-        case "150":
-            turismo.style.display = "flex";
-            destinoEligido.innerHTML = "Turismo urbano"
+            case "150":
+                turismo.style.display = "flex";
+                destinoEligido.textContent = "Turismo urbano"
             precioBase.innerHTML = destino + "€";
-
+            console.log(destinos.urbano.nombre);
+            console.log(destinos.urbano.precio);
     }
 
 }
@@ -101,8 +122,18 @@ function calcularPrecio() {
         return;
     }
 
-    if (fechaFin < fechaInicio) {
-        alert("Rango de fechas inválido.");
+    if (fechaFin <= fechaInicio) {
+        alert("Rango de fechas inválido.");        
+        return;
+    }
+    
+    if (inicio === "" || fin === "") {
+        alert("Debes elegir un rango de fechas.");
+        return;
+    }
+
+    if (finalDias == 1) {
+        alert("El rango de fechas debe ser mínimo 2 días.");
         return;
     }
 
@@ -175,10 +206,10 @@ function calcularPrecio() {
                     <th colspan="5">Descuentos aplicados:</th>
                 </tr>
                 <tr>
-                    <td colspan="5" style="text-align: center;">10% de descuento (más de 5 días): ${descuento1}€</td>
+                    <td colspan="5" style="text-align: center;">10% de descuento (5 días o más): ${descuento1}€</td>
                 </tr>
                 <tr>
-                    <td colspan="5" style="text-align: center;">15% de descuento (más de 4 personas): ${descuento2}€</td>
+                    <td colspan="5" style="text-align: center;">15% de descuento (4 personas o más): ${descuento2}€</td>
                 </tr>
                 <tr>
                     <th colspan="4">Total final:</th>
@@ -193,7 +224,7 @@ function calcularPrecio() {
                     <th colspan="5">Descuentos aplicados:</th>
                 </tr>
                 <tr>
-                    <td colspan="5" style="text-align: center;">10% de descuento (más de 5 días): ${descuento1}€</td>
+                    <td colspan="5" style="text-align: center;">10% de descuento (5 días o más): ${descuento1}€</td>
                 </tr>
                 <tr>
                     <th colspan="4">Total final:</th>
@@ -208,7 +239,7 @@ function calcularPrecio() {
                     <th colspan="5">Descuentos aplicados:</th>
                 </tr>
                 <tr>
-                    <td colspan="5" style="text-align: center;">15% de descuento (más de 4 personas): ${descuento2}€</td>
+                    <td colspan="5" style="text-align: center;">15% de descuento (4 personas o más): ${descuento2}€</td>
                 </tr>
                 <tr>
                     <th colspan="4">Total final:</th>
