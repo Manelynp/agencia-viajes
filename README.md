@@ -29,13 +29,13 @@ The booking functionality is a **simulation** and does not process real reservat
 ## 🖼️ Preview
 
 ### 🏝️ Home Page
-![Home Page](img/home.png)
+![Home Page](img/homepage.PNG)
 
 ### 📝 Booking Form
-![Booking Form](img/booking.png)
+![Booking Form](img/booking-form.PNG)
 
 ### 💰 Booking Summary & Price Calculation
-![Booking Summary](img/booking-summary.png)
+![Booking Summary](img/orice-calculation.PNG)
 
 > Screenshots show the main interface, booking form, and dynamically calculated booking summary.
 
@@ -113,7 +113,7 @@ Isla-Viajes-y-Aventuras/
     └── ...
 
 
-🎯 Project Purpose
+## 🎯 Project Purpose
 
 This project was created as part of my frontend web development training to practice building an interactive website using HTML, CSS, and JavaScript.
 
@@ -126,12 +126,12 @@ Manipulating the DOM
 Performing dynamic calculations
 Creating a responsive interface
 
-🌐 Language
+## 🌐 Language
 
 The website interface is in Spanish, while the project documentation is provided in English.
 
 
-👩‍💻 Author
+## 👩‍💻 Author
 
 Manelynp
 
