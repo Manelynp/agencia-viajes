@@ -31,12 +31,18 @@ header {
     width: 100%;
     background-color: var(--color-secondary);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
     padding: 10px;
 }
 
-header>a {
+header a {
+    text-decoration: none;
+    color: var(--color-text-muted);
+
+}
+
+#logo>a {
     text-decoration: none;
     font-family: "Story Script", sans-serif;
     color: var(--color-text-muted);
@@ -70,7 +76,8 @@ nav>a:hover {
 
 #seccion_hero {
     width: 100%;
-    height: 80vh;
+    min-height: 560px;
+    height: clamp(560px, 80vh, 820px);
     background-image: url(../img/hero1.jfif);
     background-attachment: fixed;
     background-size: cover;
@@ -80,20 +87,31 @@ nav>a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 40px;
+    padding: 48px 24px;
     font-weight: bold;
 }
 
+/* #seccion_hero>p {
+    background-color: rgba(47, 79, 79, 0.315);
+    padding: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 0 auto;
+} */
+
 #destino_hero {
     width: 100%;
-    height: 70vh;
+    min-height: 520px;
+    height: clamp(520px, 70vh, 760px);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    padding: 48px 24px;
     color: var(--color-text-muted);
     position: relative;
 }
+
 #destino_hero img {
     width: 100%;
     height: 100%;
@@ -104,16 +122,37 @@ nav>a:hover {
     z-index: -1;
 }
 
+/* Use this block when the destination hero uses a video. */
+/* #destino_hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+} */
+
 #destino_hero>div {
+    width: min(100%, 760px);
     display: flex;
     flex-direction: column;
     gap: 40px;
+    align-items: center;
 }
 
 #seccion_hero>h1, #destino_hero h1 {
+    max-width: 900px;
     text-align: center;
     font-size: 2rem;
     font-family: "Story Script", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    line-height: 1.5;
+}
+
+#seccion_hero>h1 {
+    color: var(--color-text);
+    text-shadow: 2px 2px 4px #F5FBE6;
 }
 
 #seccion_hero>a {
@@ -136,7 +175,13 @@ nav>a:hover {
     text-align: center;
     color: var(--color-text-muted);
     font-family: "Lato", sans-serif;
-    width: 50vw;
+    width: min(100%, 760px);
+    /* background-color: rgba(47, 79, 79, 0.315); */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+    line-height: 1.5;
 }
 
 #card_destino {
@@ -147,7 +192,8 @@ nav>a:hover {
     padding: 50px;
 }
 
-#card_destino h2, p {
+#card_destino h2,
+#card_destino p {
     padding: 0 20px;
 }
 
@@ -229,7 +275,8 @@ nav>a:hover {
     object-fit: cover;
 }
 
-.actividades h3, p {
+.actividades h3,
+.actividades p {
     padding: 10px 20px;
 }
 
@@ -267,12 +314,11 @@ nav>a:hover {
 }
 
 #galeria {
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-
+    width: 100%;
+    padding: clamp(12px, 4vw, 40px);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: clamp(12px, 3vw, 20px);
 }
 
 #galeria img {
@@ -280,6 +326,15 @@ nav>a:hover {
     border-radius: 20px;
     object-fit: cover;
 }
+
+/* #galeria video {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    object-fit: cover;
+} */
 
 #formulario {
     height: max-content;
@@ -525,19 +580,22 @@ button:active {
     }
 
     #seccion_hero {
-        height: 30vh;
-        gap: 50px;
+        min-height: 500px;
+        height: clamp(500px, 75vh, 680px);
+        gap: 28px;
+        padding: 36px 20px;
         background-attachment: unset;
     }
 
-    #seccion_hero>h1, #destino_hero>h1 {
-        font-size: 2rem;
+    #seccion_hero>h1, #destino_hero h1 {
+        max-width: 100%;
+        font-size: clamp(1.8rem, 8vw, 2.5rem);
     }
 
     #seccion_hero p, #destino_hero p {
-        width: 100vw;
-        font-size: 1.2rem;
-        padding: 0 50px;
+        width: min(100%, 560px);
+        font-size: clamp(1rem, 4vw, 1.2rem);
+        padding: 0;
     }
 
     #seccion_hero>a {
@@ -554,9 +612,10 @@ button:active {
         justify-content: center;
     }
 
-    #destino_hero, #destino_hero>video {
-        height: 30vh;
-        gap: 20px;
+    #destino_hero {
+        min-height: 500px;
+        height: clamp(500px, 75vh, 680px);
+        padding: 36px 20px;
     }
 
     #destino_hero>div {
@@ -580,16 +639,6 @@ button:active {
         padding: 20px;
     }
 
-    #trailer_vid {
-        flex-wrap: wrap;
-        justify-content: center;
-
-    }
-
-    #trailer_vid video {
-        width: 300px;
-    }
-
 }
 
 
@@ -601,7 +650,9 @@ button:active {
 
     header {
         padding: 5px;
+        flex-direction: column;
         align-items: center;
+        gap: 6px;
     }
 
     span {
@@ -610,7 +661,8 @@ button:active {
 
     nav {
         gap: 5px;
-        padding: 0 10px;
+        width: 100%;
+        padding: 0 5px;
         justify-content: space-between;
     }
 
@@ -618,7 +670,8 @@ button:active {
         font-size: 0.9em;
     }
 
-    #seccion_hero, #destino_hero>div {
+    #seccion_hero,
+    #destino_hero > div {
         gap: 20px;
     }
 
@@ -626,8 +679,8 @@ button:active {
         font-size: 2em;
     } */
 
-    #destino_hero>h1 {
-        font-size: 2.5rem;
+    #destino_hero h1 {
+        font-size: clamp(1.7rem, 8vw, 2.2rem);
     }
 
     #card_destino {
@@ -638,6 +691,25 @@ button:active {
     #card_destino>a>div {
         width: 100%;
         height: max-content;
+    }
+
+    #contenido_extras {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .extras {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .extras>div {
+        max-width: 100%;
+    }
+
+    #contenido_extras h3 {
+        width: 100%;
+        overflow-wrap: anywhere;
     }
 
     #playa_actividades {
@@ -651,10 +723,6 @@ button:active {
 
     table {
         font-size: small;
-    }
-
-    #trailer_vid {
-        padding: 20px;
     }
 
 }
