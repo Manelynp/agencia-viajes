@@ -112,34 +112,4 @@ Isla-Viajes-y-Aventuras/
 └── img/
     └── ...
 
----
 
-## 🎯 Project Purpose
-
-This project was created as part of my frontend web development training to practice building an interactive website using HTML, CSS, and JavaScript.
-
-The main focus was on applying JavaScript to a practical user interface, particularly:
-
-Handling user input
-Validating forms
-Responding to user events
-Manipulating the DOM
-Performing dynamic calculations
-Creating a responsive interface
-
----
-
-## 🌐 Language
-
-The website interface is in Spanish, while the project documentation is provided in English.
-
----
-
-
-## 👩‍💻 Author
-
-Manelynp
-
-GitHub: https://github.com/Manelynp
-
----
