@@ -35,7 +35,7 @@ The booking functionality is a **simulation** and does not process real reservat
 ![Booking Form](img/booking-form.PNG)
 
 ### 💰 Booking Summary & Price Calculation
-![Booking Summary](img/orice-calculation.PNG)
+![Booking Summary](img/price-calculation.PNG)
 
 > Screenshots show the main interface, booking form, and dynamically calculated booking summary.
 
@@ -112,6 +112,7 @@ Isla-Viajes-y-Aventuras/
 └── img/
     └── ...
 
+---
 
 ## 🎯 Project Purpose
 
@@ -126,9 +127,13 @@ Manipulating the DOM
 Performing dynamic calculations
 Creating a responsive interface
 
+---
+
 ## 🌐 Language
 
 The website interface is in Spanish, while the project documentation is provided in English.
+
+---
 
 
 ## 👩‍💻 Author
@@ -136,3 +141,5 @@ The website interface is in Spanish, while the project documentation is provided
 Manelynp
 
 GitHub: https://github.com/Manelynp
+
+---
